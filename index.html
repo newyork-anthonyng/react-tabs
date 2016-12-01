@@ -24,5 +24,62 @@
 			<li>Nested</li>
 		</ul>
 	</nav>
+
+	<section id="API">
+		<h1>react-tabs API</h1>
+
+		<h2><code>Tabs</code></h2>
+		<p>A composite component that acts as the main container</p>
+		<dl>
+			<dt><code>onSelect(firstTabIndex, lastTabIndex)</code></dt>
+			<dd>This function is called whenever a tab is selected. The handler for this function will be passed the current tab index and last tab index.</dd>
+
+			<dt><code>selectedIndex</code></dt>
+			<dd>The tab with this index (zero-indexing) will be selected; defaults to 0.</dd>
+
+			<dt><code>forceRenderTabPanel</code></dt>
+			<dd>By default, react-tabs will only render the selected tab's contents. Setting this property to true allows you to override the default behavior, which may be useful in some circumstances (such as animating between tabs).</dd>
+
+			<dt><code>setUseDefaultStyles</code></dt>
+			<dd>You can disable the default styling of react-tabs by calling this static method once: <code>Tabs.setUseDefaultStyles(false);</code></dd>
+
+			<dt><code>className</code></dt>
+			<dd>The class name to be added to the <code>Tabs</code> main component.</dd>
+		</dl>
+
+		<h2><code>TabList</code></h2>
+		<p>A composite component that is the container for the <code>Tab</code>'s.</p>
+		<dl>
+			<dt><code>className</code></dt>
+			<dd>The class name to be added to the <code>TabList</code> component.</dd>
+
+			<dt><code>activeTabClassName</code></dt>
+			<dd>A custom class name given to a <code>Tab</code> when it is active</dd>
+
+			<dt><code>disabledTabClassName</code></dt>
+			<dd>A custom class name given to a <code>Tab</code> when it is disabled</dd>
+		</dl>
+
+		<h2><code>Tab</code></h2>
+		<p>
+			The actual tab component that the users will interact with
+			Selecting a tab can be done by either clicking with the mouse, or using the keyboard tab to give focus then navigating with the arrow keys (right/down to select the tab to the right of the selected, left/up to select the tab to the left of the selected.
+			The children of the <code>Tab</code> will be shown as the label.
+		</p>
+
+		<h2><code>TabPanel</code></h2>
+		<p>
+			The content for the tab.
+			There should be an equal number of <code>Tab</code> and <code>TabPanel</code> components.
+			The <code>Tab</code> and <code>TabPanel</code> components are tied together by the order in which they appear. For example, when the first <code>Tab</code> is selected, the first <code>TabPanel</code> will be displayed.
+		</p>
+		<dl>
+			<dt><code>className</code></dt>
+			<dd>The class name to be added to this component.</dd>
+
+			<dt><code>style</code></dt>
+			<dd>A style object to be applied to <code>TabPanel</code></dd>
+		</dl>
+	</section>
 </body>
 </html>
