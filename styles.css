@@ -1,7 +1,11 @@
 body {
-	background-color: #f9f9f9;
 	color: #2d2d2d;
+	display: flex;
 	font-family: sans-serif;
+}
+
+nav {
+	padding: 20px;
 }
 
 nav h1 {
@@ -16,4 +20,32 @@ nav ul {
 nav li {
 	font-size: 16px;
 	line-height: 1.8;
+}
+
+section {
+	padding: 20px 20px 20px 100px;
+	width: 700px;
+}
+
+code {
+	background-color: #f7f7f7;
+	padding: 5px;
+}
+
+.api {
+	margin-bottom: 60px;
+}
+
+.api p,
+.api dd {
+	line-height: 1.8;
+}
+
+dt {
+	font-size: 16px;
+	margin-top: 30px;
+}
+
+dd {
+	margin: 10px 0 10px 20px;
 }

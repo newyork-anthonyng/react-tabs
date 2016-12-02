@@ -1,1 +1,0 @@
-require('./tabs.spec.js');
